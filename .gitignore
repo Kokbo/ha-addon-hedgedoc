@@ -1,0 +1,7 @@
+node_modules/
+rootfs/app/frontend/dist/
+.test-data/
+.test-docs/
+.test-options.json
+npm-debug.log*
+.DS_Store

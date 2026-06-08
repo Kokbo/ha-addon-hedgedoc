@@ -1,0 +1,22 @@
+configuration:
+  site_name:
+    name: Site name
+    description: Display name shown at the top of the documentation workspace.
+  storage_mode:
+    name: Storage mode
+    description: Use filesystem Markdown files or the built-in SQLite database.
+  documentation_folders:
+    name: Documentation folders
+    description: Absolute Home Assistant folders that may contain editable Markdown documents.
+  allow_uploads:
+    name: Allow uploads
+    description: Allow image uploads from the editor into the selected documentation folder.
+  max_upload_size:
+    name: Maximum upload size
+    description: Maximum upload size in megabytes.
+  database_type:
+    name: Database type
+    description: Database engine for database storage mode. SQLite is supported.
+  enable_file_watchers:
+    name: Enable file watchers
+    description: Automatically watch configured folders for changes made by Samba, SSH, Git, VS Code, or File Editor.
