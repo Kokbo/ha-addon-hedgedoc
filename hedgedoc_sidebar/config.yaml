@@ -16,7 +16,9 @@ ingress_stream: true
 panel_title: Documentation
 panel_icon: mdi:file-document-edit
 map:
-  - homeassistant_config:rw
+  - type: homeassistant_config
+    read_only: false
+    path: /homeassistant
   - share:rw
   - media:rw
   - backup:rw
@@ -24,7 +26,7 @@ options:
   site_name: Home Documentation
   storage_mode: filesystem
   documentation_folders:
-    - /config/docs
+    - /homeassistant/documentation
   allow_uploads: true
   max_upload_size: 25
   database_type: sqlite
