@@ -19,13 +19,13 @@ const SQLITE_PATH = path.join(DATA_DIR, 'documentation.sqlite');
 const DEFAULT_OPTIONS = {
   site_name: 'Home Documentation',
   storage_mode: 'filesystem',
-  documentation_folders: ['/config/docs'],
+  documentation_folders: ['/homeassistant/documentation'],
   allow_uploads: true,
   max_upload_size: 25,
   database_type: 'sqlite',
   enable_file_watchers: true,
 };
-const DEFAULT_ALLOWED_ROOTS = ['/config', '/share', '/media', '/backup'];
+const DEFAULT_ALLOWED_ROOTS = ['/homeassistant', '/config', '/share', '/media', '/backup'];
 const MARKDOWN_EXTENSION = '.md';
 const MAX_SEARCH_RESULTS = 200;
 

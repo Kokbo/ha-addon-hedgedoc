@@ -44,8 +44,8 @@ No manual port exposure is required.
 site_name: Home Documentation
 storage_mode: filesystem
 documentation_folders:
-  - /config/docs
-  - /config/packages/documentation
+  - /homeassistant/documentation
+  - /homeassistant/packages/documentation
 allow_uploads: true
 max_upload_size: 25
 database_type: sqlite
@@ -63,15 +63,17 @@ enable_file_watchers: true
 
 Only folders listed here are accessible. The add-on creates missing folders at
 startup and recursively discovers `.md` files. Supported Home Assistant mount
-locations are `/config`, `/share`, `/media`, and `/backup`.
+locations are `/homeassistant`, `/config`, `/share`, `/media`, and `/backup`.
+The default Home Assistant configuration mount is `/homeassistant`, so new
+installations store documentation in `/homeassistant/documentation`.
 
 Examples:
 
 ```yaml
 documentation_folders:
-  - /config/docs
-  - /config/automations/docs
-  - /config/packages/documentation
+  - /homeassistant/documentation
+  - /homeassistant/automations/docs
+  - /homeassistant/packages/documentation
 ```
 
 ## Features
