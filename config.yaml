@@ -1,0 +1,41 @@
+---
+name: HedgeDoc Sidebar
+version: 0.1.0
+slug: hedgedoc_sidebar
+description: Markdown documentation workspace for Home Assistant
+url: https://github.com/home-assistant/addons
+arch:
+  - aarch64
+  - amd64
+  - armv7
+startup: services
+init: false
+ingress: true
+ingress_port: 8099
+ingress_stream: true
+panel_title: Documentation
+panel_icon: mdi:file-document-edit
+map:
+  - homeassistant_config:rw
+  - share:rw
+  - media:rw
+  - backup:rw
+options:
+  site_name: Home Documentation
+  storage_mode: filesystem
+  documentation_folders:
+    - /config/docs
+  allow_uploads: true
+  max_upload_size: 25
+  database_type: sqlite
+  enable_file_watchers: true
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  site_name: str
+  storage_mode: list(filesystem|database)
+  documentation_folders:
+    - str
+  allow_uploads: bool
+  max_upload_size: int(1,250)
+  database_type: list(sqlite)
+  enable_file_watchers: bool
