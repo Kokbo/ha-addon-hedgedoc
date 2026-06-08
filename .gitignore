@@ -1,5 +1,6 @@
 node_modules/
-rootfs/app/frontend/dist/
+hedgedoc_sidebar/node_modules/
+hedgedoc_sidebar/rootfs/app/frontend/dist/
 .test-data/
 .test-docs/
 .test-options.json
